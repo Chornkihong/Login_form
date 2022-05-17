@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Register Form</title>
+	<link rel="stylesheet" type="text/css" href="style_login.css">
+</head>
+<body>
+ <div class="container">
+ 	<div class="card">
+ 		<div class="inner_box" class="Card1">
+ 			<div class="card_front">
+ 				<h2>LOGIN</h2>
+ 					<form>
+ 						<input type="Email" class="input-box" placeholder="Your Email" required>
+ 						<input type="Password" class="input-box" placeholder=" Password" required>
+ 						<button type="Sumit" class="Sumit-btn"> Sumit</button>
+ 						<input type="checkbox"><span>Remenber Me</span>
+ 					</form>
+ 					<button type="button" class="btn" onclick="OpenRegister()"> I'm your Here</button>
+ 					<a href="">Forgot Password</a>
+
+ 			</div>
+ 			<div class="card_back">
+ 				<h2>REGISTER</h2>
+ 					<form>
+ 						<input type="text" class="input-box" placeholder="User Name" required>
+ 						<input type="Email" class="input-box" placeholder="Your Email" required>
+ 						<input type="Password" class="input-box" placeholder=" Password" required>
+ 						<button type="Sumit" class="Sumit-btn"> Sumit</button>
+ 						<input type="checkbox"><span>Remenber Me</span>
+ 					</form>
+ 					<button type="button" class="btn" onclick="OpenLogin()"> I'm an account</button>
+ 					<a href="#">Forgot Password</a>
+
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ 			<script type="text/javascript">
+ 				var Card1 = document.getElementsByclass('Card1');
+ 				function OpenRegister(){
+ 					Card1.style_login.transform = "rotateY(-180deg)";
+ 					
+ 				}
+ 				function  OpenLogin(){
+ 					Card1.style_login.transform = "rotateY(0deg)";
+ 				}
+
+ 			</script>
+</body>
+</html>
